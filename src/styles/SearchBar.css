@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Pluto";
+    src: 
+    url("fonts/237A5F_0_0.woff") format("woff")
+    }
+
+
+#search{
+    background: linear-gradient(0deg, rgb(193,139,78) 4%, rgb(233,198,123) 40%);
+    padding:75px 0 0;
+}
+
+.search-bar h1{
+    font-family: 'Pluto';
+    color:#442f19;
+    font-size: 7.594rem;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 12px 2px 10px #c08a4d;
+}
+
+.searchInput{
+    width:500px!important;
+    margin:0 auto!important;
+    display:block;
+}
+
+.bottomWave{
+    height:32px;
+    margin: 75px -1px -3px -1px;
+    background: url(../images/header-drip-effect.png) repeat-x;
+}
