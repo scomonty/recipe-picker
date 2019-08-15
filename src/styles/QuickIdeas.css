@@ -23,7 +23,7 @@
 
 .bottom-cap{
 position: relative;
-z-index: 1;
+z-index: 12;
 top: 45px;
 margin: 0px auto;
 height: 70px;
@@ -33,6 +33,7 @@ background: url(../images/menu-header-drop-bg.png) 50% 0 no-repeat;
 
 .bottom-trim{
     position: absolute;
+    z-index: 11;;
     bottom: -18px;
     width: 100%;
     height: 18px;

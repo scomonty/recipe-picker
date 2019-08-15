@@ -1,3 +1,11 @@
 .loadScreen{
-	height:100vh;
+	position: relative;
+	margin-top:-168px;
+	z-index: 10;
+}
+
+
+.dimmer{
+	height:50vh!important;
+	opacity:.8!important;
 }

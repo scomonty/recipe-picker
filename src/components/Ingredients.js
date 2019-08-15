@@ -67,7 +67,7 @@ class Ingredients extends React.Component{
                     <div className="bottomWave"></div>
                 </div>
                 <div className="QuickIdeas">
-                    <Link to="/" className="ui button home">back to home</Link>
+                    <Link to="/recipe-picker/" className="ui button home">back to home</Link>
                     <div className="bottom-cap"></div>
                     <div className="bottom-trim"></div>
                 </div>
