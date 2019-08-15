@@ -10,7 +10,6 @@
     text-align: center;
     margin-bottom:175px;
     position: relative;
-
 }
 
 .IdeasHeader{
@@ -38,4 +37,8 @@ background: url(../images/menu-header-drop-bg.png) 50% 0 no-repeat;
     width: 100%;
     height: 18px;
     background: url(../images/header-bottom-trim.png) repeat-x;
+}
+
+.QuickIdeas .home{
+    margin: 20px 0 -20px;
 }

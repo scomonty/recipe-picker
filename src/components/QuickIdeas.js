@@ -1,14 +1,31 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { _fetchFoods } from '../actions';
 import '../styles/QuickIdeas.css';
 
 
 
-const QuickIdeas = ({onButtonTap, items}) => {
-    const itemsToArray = items.split(', ');
+class QuickIdeas extends React.Component {
+
+
+  onQuickIdeasClick = async (e) => {
+    const whatWasPressed = e.target.innerText;
+    this.props._fetchFoods(whatWasPressed);
+}
+
+render() {
+    const itemsToArray = this.props.items.split(', ');
     const  IdeasMenu = itemsToArray.map( (item) => {
-        return <button onClick={onButtonTap} className="ui basic button QIButton" key={item}>{item}</button>
+       return <button onClick={this.onQuickIdeasClick} className="ui basic button QIButton" key={item}>{item}</button>
       });
       return <div>{IdeasMenu}</div>
 }
+}
 
-export default QuickIdeas;
+
+const mapStateToProps = (state) => {
+  return { foods: state.foods }
+}
+
+
+export default connect(mapStateToProps, { _fetchFoods })(QuickIdeas);

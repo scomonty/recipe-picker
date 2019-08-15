@@ -30,3 +30,13 @@
     margin: 75px -1px -3px -1px;
     background: url(../images/header-drip-effect.png) repeat-x;
 }
+
+
+
+.ingredientsBanner{
+    background: linear-gradient(0deg, rgb(160,227,250) 4%, rgb(90,191,247) 40%)!important;   
+}
+
+.ingredientsBanner h1{
+    color:#fff;
+}

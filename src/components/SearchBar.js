@@ -1,5 +1,7 @@
-import React from 'react';
 import '../styles/SearchBar.css';
+import React from 'react';
+import { connect } from 'react-redux';
+import { _fetchFoods } from '../actions';
 
 class SearchBar extends React.Component{
 	state={term: ''};
@@ -10,7 +12,7 @@ class SearchBar extends React.Component{
 
 	onFormSubmit = (e) => {
 		e.preventDefault();
-		this.props.onFormSubmit(this.state.term);
+		this.props._fetchFoods(this.state.term);
 	}
 
 	render(){
@@ -28,4 +30,9 @@ class SearchBar extends React.Component{
 	}
 }
 
-export default SearchBar;
+const mapStateToProps = (state) => {
+    return { foods: state.foods }
+}
+
+
+export default connect(mapStateToProps, { _fetchFoods })(SearchBar);

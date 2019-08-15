@@ -15,7 +15,7 @@ const GetSearchButtons = searchResults.map( (searchResult) => {
   </div>
   <h2 className="ItemTitle">{searchResult.title}</h2>
   <div className="ui buttons">
-  <Link to="/components/streams/ingredients" className="ui button" id={searchResult.recipe_id} onClick={onButtonTap}>{ButtonText}</Link>
+  <Link to="/components/Ingredients" className="ui button" id={searchResult.recipe_id} onClick={onButtonTap}>{ButtonText}</Link>
   <div className="or"></div>
   <a className="ui positive button" href={searchResult.source_url} target="_blank" rel="noopener noreferrer">See More Info</a>
 </div>
