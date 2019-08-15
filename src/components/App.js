@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
             <BrowserRouter>
-            <Route path="/" exact component={Main} />
+            <Route path="/recipe-picker/" exact component={Main} />
             <Route path='/components/Ingredients' exact component={Ingredients} />
       </BrowserRouter>
     </div>
