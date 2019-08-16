@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { _fetchFoods } from '../actions';
 import { getRId } from '../actions';
-import Loader from './Loader';
+//import Loader from './Loader';
 import '../styles/InfoButton.css';
 import '../styles/grid.css';
 
